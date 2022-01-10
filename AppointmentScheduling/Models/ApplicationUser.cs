@@ -1,10 +1,11 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
+
 namespace AppointmentScheduling.Models
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser
     {
-        public ApplicationUser()
-        {
-        }
+        public string Name { get; set; }
+
     }
 }
